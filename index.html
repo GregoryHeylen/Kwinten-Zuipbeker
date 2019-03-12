@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,41 @@
     <link rel="stylesheet" href="assets/css.css">
     <title>Tussenstand</title>
 </head>
-<body class="container">
 
+<body class="container row">
+    <p></p>
+    <img class="col l2 offset-l2 responsive-img" src="assets/logo.jpg" alt="logo kwinten">
+    <h2 class="col l4 center">Zuipbeker</h2>
+    <img class="col l2 responsive-img" src="assets/logo.jpg" alt="logo kwinten">
+    <p class="divider col l12"></p>
+    <div class="col l3 offset-l">
+        <div class="card-panel white">
+            <span>
+                <p id="1-team-naam">De Winnaars</p>
+                <div class="valign-wrapper">
+                    <div class="col l12 valign-wrapper">
+                        <a id="addScore" class="btn-flat border center col l3 1">-</a>
+                        <input class="col l4 browser-default border offset-l1 1" type="number">
+                        <a id="substractScore" class="btn-flat border center col l3 offset-l1 1">+</a>
+                    </div>
+                </div>
+                <p>Score: <span id="1-score"></span></p>
+            </span>
+        </div>
+    </div>
+    <p class="divider col l12"></p>
+    <div class="col l12">
+        <input id="teamNaamNieuw" name="teamNaamNieuw" class="col l4 border offset-l1" type="text">
+        <a id="addTeam" class="btn-flat border center col l3">+</a>
+    </div>
+    <p class="divider col l12"></p>
+    <div class="col l12">
+        <a id="removeAllTeams" class="btn-flat border center col l3">Verwijder alle teams</a>
+    </div>
 
-
-
-
-
-    <script src="app.js"></script>
+    <script src="assets/jquery.js" type='text/javascript'></script>
+    <script src="assets/materialize.js" type='text/javascript'></script>
+    <script defer src="assets/app.js" type='text/javascript'></script>
 </body>
+
 </html>
