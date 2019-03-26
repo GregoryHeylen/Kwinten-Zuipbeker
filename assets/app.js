@@ -50,6 +50,8 @@ $(document).ready(function() {
 
     $('.addScore').on("click", function() {
         var team = $(this).val();
+
+        console.log(team)
         var toeTeVoegenScore = parseInt($('#' + team).val())
         console.log(toeTeVoegenScore)
         if(toeTeVoegenScore === '' || Number.isInteger(toeTeVoegenScore) == false){
